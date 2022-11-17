@@ -26,8 +26,9 @@ function App() {
         Hey there, welcome to the live coding challenge!
       </h1>
       <p>
-        1. First of all, please output the stringified Supplier data coming from
-        the useApi hook here:
+        1. First of all, please use the useApi hook to receive the JSON Data,
+        assign it to a state variable and output the stringified Supplier data
+        coming from the useApi hook here:
       </p>
       <pre className="p-4 rounded-xl bg-gray-200 text-xs">
         {JSON.stringify(supplierData, null, 2)}
@@ -63,6 +64,11 @@ function App() {
           className="border border-gray-600 rounded-md px-2"
         ></input>
       </div>
+      <p className="">
+        4. Bonus question: How would you automatically display all tag
+        categories using only loops and without manually writing down the tag
+        categories.
+      </p>
     </div>
   );
 }
