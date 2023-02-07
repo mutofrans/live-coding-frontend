@@ -34,7 +34,7 @@ function App() {
     }
 
     if (tag && !tagExists) {
-      setTagArray([tag, ...tagArray]);
+      setTagArray([...tagArray, tag]);
       setTag("");
       setError("");
     }
